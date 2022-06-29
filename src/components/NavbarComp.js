@@ -5,13 +5,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import {
   BrowserRouter,
-  Route,
   Link,
-  Routes,
 } from "react-router-dom";
-import EmpForm from './EmpForm';
-import EmpList from './EmpList';
-import TaskList from './TaskList';
+
 
 
 export default class NavbarComp extends Component {
@@ -39,11 +35,6 @@ export default class NavbarComp extends Component {
         </Container>
         <div>
         </div>
-        <Routes>
-            <Route path = "/EmpForm" element={<EmpForm />}/>
-            <Route path = "/Emplist" element={<EmpList />}/>
-            <Route path = "/TaskList" element={<TaskList />}/>
-          </Routes>
       </Navbar>
       </BrowserRouter>
       
